@@ -1,0 +1,26 @@
+version: "3"
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: radio-fla
+    tty: true
+    restart: always
+    volumes: 
+      - .:/app
+    working_dir: '/app'
+    expose: 
+      - "4000"
+    networks:
+      services:
+        ipv4_address: 10.10.0.22
+
+networks:
+  services:
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.0.0/20
+          
+          
