@@ -4,7 +4,7 @@
 2. Copy `docker-compose.yml.example` to `docker-compose.yml`
 3. Edit the `docker-compose.yml` with your Docker information
 4. Run `docker-compose up -d` command
-5. Run `docker logs -f radio-jupiter`
+5. Run `docker logs -f radio-fla`
 
 # Project information
 
