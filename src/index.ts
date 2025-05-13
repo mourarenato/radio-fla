@@ -23,7 +23,6 @@ const client = new Client({
 
 const TOKEN = process.env.DISCORD_TOKEN;;
 const AUDIO_PATH = path.join(__dirname, `../assets/audio/${process.env.AUDIO_NAME}`);
-console.log(TOKEN);
 
 if (fs.existsSync(AUDIO_PATH)) {
   console.log(`Audio found in ${AUDIO_PATH}`);
